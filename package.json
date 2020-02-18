@@ -1,0 +1,23 @@
+{
+  "name": "bpm-help",
+  "version": "1.0.0",
+  "description": "online help for BioPMS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Biosensors/bpm-help.git"
+  },
+  "author": "Ya Dong Zhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Biosensors/bpm-help/issues"
+  },
+  "homepage": "https://github.com/Biosensors/bpm-help#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "redirect-https": "^1.3.0"
+  }
+}
