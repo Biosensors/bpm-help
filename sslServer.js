@@ -1,13 +1,13 @@
-let port = "2021"
-const http = require('http');
-// const fs = require('fs');
+let port = "3000"
+const https = require('https');
+const fs = require('fs');
 const express = require('express');
 const app = express();
-// const options = {
-//   key: fs.readFileSync('server.key'),
-//   cert: fs.readFileSync('server.cert')
-// };
-// app.use('/', require('redirect-https')({}));
+const options = {
+  key: fs.readFileSync('server.key'),
+  cert: fs.readFileSync('server.cert')
+};
+app.use('/', require('redirect-https')({}));
 app.use('/', express.static(__dirname + '/html'));
 app.use('/js', express.static(__dirname + '/js'));
 app.use('/css', express.static(__dirname + '/css'));
@@ -17,6 +17,6 @@ app.get('/hello', (req, res) => {
   res.send('Hello HTTPS!')
 })
 
-http.createServer(app).listen(port, () => {
-  console.log('HTTP Listening in port '+port+"!")
+https.createServer(options, app).listen(port, () => {
+  console.log('HTTPS Listening in port '+port+"!")
 })
