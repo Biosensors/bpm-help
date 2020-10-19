@@ -8,10 +8,10 @@ const app = express();
 //   cert: fs.readFileSync('server.cert')
 // };
 // app.use('/', require('redirect-https')({}));
-app.use('/', express.static(__dirname + '/html'));
-app.use('/js', express.static(__dirname + '/js'));
-app.use('/css', express.static(__dirname + '/css'));
-app.use('/img', express.static(__dirname + '/img'));
+app.use('/help', express.static(__dirname + '/html'));
+app.use('/help/js', express.static(__dirname + '/js'));
+app.use('/help/css', express.static(__dirname + '/css'));
+app.use('/help/img', express.static(__dirname + '/img'));
 
 app.get('/hello', (req, res) => {
   res.send('Hello HTTPS!')

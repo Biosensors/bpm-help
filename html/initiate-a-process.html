@@ -99,7 +99,7 @@
           <div>
             <h2>Overview</h2>
           </div>
-          <p>The initiate process function allow you to search process template that are available to you, and also initiate new process against the template.  </p>
+          <p>The initiate process function allow you to search all the available process template , and use it to initiate new process. </p>
          </section>
 
         <!-- Basic
@@ -112,10 +112,14 @@
 		  <ol>
 		  <li>Click on "Initiate A Process" menu link </li>
 		  <li>Click on "My Draft Processess" if you have any draft process yet to submit. Otherwise, proceed to step 3  to search for template</li>
-		  <li>Enter search criteria (optional)</li>
+		  <li>Click on "Search Template" tab and enter/select your search criteria</li>
 		  <li>Click on "Search" button</li>
 		  <li>Search result show list of available template based on search criteria</li>
 		  <li>To initiate process, click on the "New Process" link on the record
+		  <ul><li>Contiunue by referring to Next Section - Enter Process Details </li></ul>
+		  <li>For frequently used template, you may save it by clicking on the "Save To Favorite" button.
+		  <li>To access the saved template, kindly click on the "My Favorite Templates" Tab. 
+		 
 		   </ol>
 
         </section>
@@ -127,6 +131,8 @@
             <h2>Enter Process Details</h2>
           </div>
 		   <img src="img/process_details.png">
+		   <img src="img/process_details3.png">
+
 		  <ol>
 		  <li>In the process detail page, enter "Subject" </li>
 			<ul>
@@ -135,15 +141,21 @@
 		  <li>Enter on-behalf of (optional)</li>
 			<ul>
 			<li>Indicate if process is raised on behalf of others . Else , leave it as blank </li>
+			<li>Depend on template setting, process might get routed to on-behalf user first for confirmation before proceed further for approval/action </li>
 			<li>For process that requires initiator's functional reporting for action (e.g. reporting manager, functional head and etc), it will be routed to on-behalf user reporting instead of reporting of user who submitted this process     </li>
+			</ul>
+		  <li>Enter process  "Start On" </li>
+			<ul>
+			<li>This serve as a schedule feature where process will kick start only on the user specified date</li>
+			<li>Depend on template setting, field might be disabled for particular template.  </li>
 			</ul>
 		  <li>Enter initiator input form </li>
 		  <ul>
-			<li>Input form will be rendered accordingly to the process template setting </li>
+			<li>Input form will be rendered accordingly based on the template setting </li>
 			<li>"Submit" button will be enabled only once all the mandatory fields are provided </li>
-			<li>For attachement upload, please first save the process as draft and you see the upload function be available  </li>
+			<li>For attachement upload, please first save the process as draft and the upload function will be shown  </li>
 			 </ul>  
-		  <li>Review Approver / Action Taker / Acknowledger (see next section)</li>
+		  <li>Review Person Responsible For The Process (e.g. Approver / Action Taker / Acknowledger) - see next section</li>
 		 </ol>
         </section>
 
@@ -157,14 +169,14 @@
              <ol>
 		   <li>Review by click on each of generated tab </li>
 			<ul>
-			<li>Process of Approver / Action Taker / Acknowledger will auto generated based on the configured template and also info provided in initiator section </li>
-			<li>Do feedback to template owneer if you found that the process or populated person rensponsible is incorrect</li>
+			<li>This section will be auto generated based on the configured template and also info provided in form by initiator</li>
+			<li>Do feedback to template owner if you found that the process or populated person rensponsible is incorrect</li>
 			</ul>
 			<li>Review who is the person in charge of each of the process</li>
 			<ul>
 			<li>There might be case where you need to input the rensponsible person yourself : </li>
-				<ul><li>when template is configured in such way where initiator to select their own rensponsible person </li></ul>
-				<ul><li>when there is multiple users exist for the same job role </li></ul>
+				<ul><li>when template is configured in such way where initiator need to select who is the responsible approver/action taker/acknowledger  </li></ul>
+				<ul><li>when there is multiple users found for the pre-defined role in template  </li></ul>
 			<li>For the above case, the person responsible need to be selected before user is allowed to submit the process. Else, "Submit" button will be disabled and tab will be shown in amber color for attention  </li>
 			<li>You could also customize the frequency of reminder by clcking on the "Bell" icon at the tab </li>
 			<ul>
@@ -184,7 +196,9 @@
 		   <li>Click on "Save Draft" to save process as draft for later submission</li>
 		   <li>Click on "Submit" to submit process for action and approval</li>
 				<ul><li>Email notification will be triggered to approver/action taker / acknowledger upon process submission </li></ul>
-        </section>
+        		<ul><li>Submit button will be enabled  once all the mandatory info is provided </li></ul>
+
+		</section>
 		
 		 <section id="Act-On-Process">
           <div>
@@ -192,27 +206,29 @@
           </div>
 		  <img src="img/process_email.png">
 			<ol>
-		   <li>From the received email, the approver/action taker can click on "Click to open your task" link to open the task in BPM</li>
+		   <li>From the received email, the approver/action taker can click on link in email to open the task in BPM</li>
 				<ul><li>Alternatively, user can access thier pending task via "My Task" function in BPM</li></ul>
 			</ol>
 			<img src="img/process_approve.png">
+			<img src="img/process_approve2.png">
+
 			<ol>
+			<li>Upload attachement (if any)</li>
 			<li>Enter comment (mandatory for Rework or Reject action)</li>
 				<ul>
 				<li>There might be other field(s) for input - subject to template configuration</li>
 				</ul>
-			<li>Upload attachement (if any)</li>
 			<li>Click to perform action</li>
 				<ul>
 				<li>For approval, user can perform :</li>
 					<ul><li>Approve - Upon approve, process will continue to next step</li></ul>
 					<ul><li>Reject - Upon reject, initiator get notified and process end as rejected</li></ul>
-					<ul><li>Rework - Upon rework, initiator get notified and process will be routed back to initiator for action</li></ul>
+					<ul><li>Rework - Upon rework, selected routing person get notified and process will be routed back to him/her for action</li></ul>
 				</ul>
 				<ul>
 				<li>For action taker, user can perform :</li>
 					<ul><li>complete - Upon complete, process will continue to next step</li></ul>
-					<ul><li>Rework - Upon rework, initiator get notified and process will be routed back to initiator for action</li></ul>
+					<ul><li>Rework - Upon rework, selected routing person get notified and process will be routed back to him/her for action</li></ul>
 				</ul>
 				
 			</ol>
@@ -228,7 +244,7 @@
 			 <li>From the received email, the approver/action taker can click on available action link in email</li>
 				<ul><li>Email action might not be available for certain process. This is subject to configuration in template</li></ul>
 			<li>Upload attachement (if any)</li>
-			<li>indicate comment (if any)</li>
+			<li>indicate comment (mandatory for reject and rework action)</li>
 			<li>Click on "Reply" button</li>
 				<ul><li>Once processed by BPM , email will be triggered to user to inform email action processing status (i.e. success or fail) </li></ul>
 			</ol>
