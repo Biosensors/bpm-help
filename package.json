@@ -4,7 +4,7 @@
   "description": "online help for BioPMS",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Biosensors/bpm-help#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "redirect-https": "^1.3.0"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
   }
 }

@@ -1,0 +1,8 @@
+bower_components
+node_modules
+/target/
+.project
+.vscode
+/deploy/
+.VSCodeCounter/
+.env
