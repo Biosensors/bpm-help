@@ -46,7 +46,7 @@
                 <a href="./initiate-a-process.html">Initiate a Process</a>
               </li>
               <li class="">
-                <a href="./my-open-process.html">My Open Process</a>
+                <a href="./my-open-process.html">My Open Processes</a>
               </li>
               <li class="">
                 <a href="./my-tasks.html">My Tasks</a>
@@ -82,12 +82,12 @@
         <ul class="nav nav-list later-sidenav">
           <li><a href="#overview"><i class="icon-chevron-right"></i> Overview</a></li>
           <li><a href="#create-a-new-template"><i class="icon-chevron-right"></i> Create a new template</a></li>
-          <li><a href="#configure-field"><i class="icon-chevron-right"></i> Configure Field</a></li>
-          <li><a href="#Configure-field-conditional-rules"><i class="icon-chevron-right"></i> Configure Field Conditional Rules</a></li>
-          <li><a href="#configure-table"><i class="icon-chevron-right"></i> Configure Table</a></li>
-		  <li><a href="#Configure-Role"><i class="icon-chevron-right"></i> Configure Workflow</a></li>
-		  <li><a href="#Configure-Reminder"><i class="icon-chevron-right"></i> Configure Reminder</a></li>
-           <li><a href="#Submit-Template"><i class="icon-chevron-right"></i> Submit Template For Approval</a></li>
+          <li><a href="#configure-field"><i class="icon-chevron-right"></i> Configure field</a></li>
+          <li><a href="#Configure-field-conditional-rules"><i class="icon-chevron-right"></i> Configure field conditional rules</a></li>
+          <li><a href="#configure-table"><i class="icon-chevron-right"></i> Configure table</a></li>
+		  <li><a href="#Configure-Role"><i class="icon-chevron-right"></i> Configure workflow</a></li>
+		  <li><a href="#Configure-Reminder"><i class="icon-chevron-right"></i> Configure reminder</a></li>
+           <li><a href="#Submit-Template"><i class="icon-chevron-right"></i> Submit template for approval</a></li>
         </ul>
       </div>
       <div class="span9">
@@ -99,7 +99,7 @@
           <div>
             <h2>Overview</h2>
           </div>
-          <p>The build template function allow you to design the form with different type of input fields, configure who need to be involved in the process (e.g. action taker, approver or acknowledger) and how process will be routed for action. </p>
+          <p>The build template function allows you to design the form with different type of control field, configure workflow such as who should be involved in the process (e.g. action taker, approver or acknowledger) and how process will be routed for action. </p>
          </section>
 
         <!-- Create a new template
@@ -110,52 +110,52 @@
           </div>
 		  <img src="img/template_create.png">
 		  <ol>
-		  <li>Click on "Build Template" menu link </li>
-		  <li>Click on "Create a new template" button</li>
-		  <li>Note : The "New template from copy" button located at the bottom-right side is used to copy template from Test Enviroment to Live Enviroment. Do contact IT for assistance for more details about the usage.</li>
+		  <li>Click on "BUILD TEMPLATE" menu link. </li>
+		  <li>Click on "Create a new template" button.</li>
+		  <li>Note : The "New template from copy" button at bottom-right is typically used to migrate template from test environment to live environment . Do contact IT for assistance about the usage.</li>
 
 		   </ol>
 		  <img src="img/template_header.png">
 		  <ol>
-		  <li>Enter Template Name</li>
+		  <li>Enter "Template Name".</li>
 			 <ul>
-			 <li>Please refer  WI-11719 for the standard naming convention </li>
+			 <li>Please refer  WI-11719 for the standard naming convention. </li>
 			 </ul>
-		  <li>Enter Template Description</li>
+		  <li>Enter "Template Description".</li>
 			 <ul>
-			 <li>This is useful for requestor to know what is this process template for when they raise the process </li>
+			 <li>This is useful for requestor to know what the process template is for while initiating the process. </li>
 			 </ul>
-		  <li>Enter Prefix</li>
+		  <li>Enter "Prefix".</li>
 			<ul>
-			<li>This will be prefix in process ID for process submitted under this template. </li>
-			<li>Must be unique and not used by other process template</li>
+			<li>This will be prefix in process ID for all processes submitted under this template. </li>
+			<li>It must be unique and not used by other process template.</li>
 			</ul>
-		<li>Indicate if on-behalf user confirmation is required</li>
+		<li>Indicate if on-behalf user confirmation is required.</li>
 			<ul>
 			<li>If yes, system will route to on-behalf person for confirmation if process is raised on behalf of them by someone else. </li>
 			</ul>
-		<li>Indicate if scheduled start date allowed </li>
+		<li>Indicate if scheduled start date is allowed. </li>
 			<ul>
 			<li>If yes, system will allow initiator to indicate process start date during process submission. </li>
 			<li>The submitted process will start route for action only on the scheduled start date. </li>
 			</ul>
-		<li>Indicate if duplicate approver allowed </li>
+		<li>Indicate if duplicate approver is allowed. </li>
 		<ul>
-		<li>If no, system bypass and routed for approval only once. (e.g. if xxx template is configured to route to direct manager and HOD for approval. if direct manager and HOD is the same person, system  bypass direct manager and only route to HOD for approval. </li>
+		<li>If no, system bypass and routed for approval only once. (e.g. if xxx template is configured to route to direct manager and HOD for approval. If direct manager and HOD are the same person, system  bypass direct manager and only route to HOD for approval.) </li>
 		</ul>
-		 <li>Click on "Initiator" Section to start design your form</li>
+		 <li>Click on "Initiator" Section to start design your form.</li>
 			<ul>
-			 <li>Note : Form can be designed in other steps as well (such as approver, action taker and etc) </li>
+			 <li>Note : Form can be designed in other user steps as well such as approver, action taker and etc. </li>
 			</ul>
-		 <li>Click on "Add Field" button to add field control</li>
+		 <li>Click on "+ ADD" button on field/column component to add field control.</li>
 			<ul>
-			 <li>Upon click, field control will be added under "Initiator" Section" for configuration </li>
-			  <li>Refer "Configure field" section for more details on the configuration </li>
+			 <li>Upon click, field control will be added under "Initiator" Section for configuration. </li>
+			  <li>Refer "Configure field" section for more details on the configuration. </li>
 			</ul>
-		<li>Click on "Add Table" button to add table control</li>
+		<li>Click on "+ ADD" button on table component to add table control.</li>
 			<ul>
-			 <li>Upon click, table control will be added under "Initiator" Section" for configuration </li>
-			 <li>Refer "Configure table" section for more details on the configuration </li>
+			 <li>Upon click, table control will be added under "Initiator" Section for configuration. </li>
+			 <li>Refer "Configure table" section for more details on the configuration. </li>
 			</ul>
 		  </ol>
         </section>
@@ -169,41 +169,41 @@
 		  <img src="img/template_field_config.png">
 
 		  <ol>
-		  	  <li>On the newly added field, click on "Configuration" icon to start configure input field - see next section "Configure Field"</li>
+		  	  <li>On the newly added field, click on "Configuration" icon to start configure input field.</li>
 		  	 <ul>
-			 <li>You could remove the field by click on "X" icon </li>
-			 <li>You could change the field's position with other fields through drag and drop </li>
-			 <li>You could clone the field as new field for usage through the copy icon next to the "Config" icon</li>
+			 <li>You could remove the field by click on "X" icon. </li>
+			 <li>You could change the field's position with other fields through drag and drop. </li>
+			 <li>You could clone the field as new field for usage through the copy icon next to the "Configuration" icon.</li>
 
 			</ul>
-		  <li>Please find below section for the configuration for different control type</li>
+		  <li>Please find below section for the configuration for different control type.</li>
 	
 		   </ol>
 		      <br></br>
 		   <h4>Input Control Type : Text / Textarea / URL / Email / Number</h4>
 		   <img src="img/input_text.png">
 		   	  <ol>
-			<li>Select "Control Type" as Input </li>
-			<li>Select "Input Type" as Text / Textarea / URL / Email / Number </li>
-		    <li>Check if field is mandatory </li>
-			<li>Enter "Label" of the field </li>
-			<li>Enter "Pattern" of the field (optional) </li>
+			<li>Select "Control Type" as Input. </li>
+			<li>Select "Input Type" as Text / Textarea / URL / Email / Number. </li>
+		    <li>Check if the field is mandatory. </li>
+			<li>Enter "Label" of the field. </li>
+			<li>Enter "Pattern" of the field (optional). </li>
 				<ul>
-				<li> Not applicable to "Number" input type</li>
-				<li>The data entered by initiator must meet this pattern. Else, error message will be shown</li>
-				<li>Please seek IT for assistance and configuration if pattern is required. </li>
+				<li> Not applicable to "Number" input type.</li>
+				<li>The data entered by initiator must matched the defined pattern. Else, error message will be shown.</li>
+				<li>Please seek IT for assistance if pattern is required. </li>
 				</ul>
-			<li>Enter min. length of the field (optional) </li>
-			<li>Enter max. length of the field (optional) </li>
-			<li>Select data source for initial value </li>
+			<li>Enter "Min (length or field)" (optional). </li>
+			<li>Enter "Max (length or field)" (optional) .</li>
+			<li>Select data source for initial value. </li>
 				<ul>
-				<li>This is a advance function used to pre-populate value using data from other system.</li>
-				<li>Please seek IT assistance for configuration if required</li>
+				<li>This is an advanced function used to populate value using data from other system.</li>
+				<li>Please seek IT assistance for configuration if required.</li>
 				</ul>
-			<li>Check if field is conditional input </li>
+			<li>Check if the field is conditional.</li>
 			<ul>
-			 <li>Field is displayed only when a particular criteria is met . Else , it will be hidden from display</</li>
-			 <li>Refer "Conditional Rules" section for more details</li>
+			 <li>Field is displayed only when the defined criteria is matched.</</li>
+			 <li>Refer "Configure field conditional rules" section for more details.</li>
 			</ul>
 		
 			
@@ -212,19 +212,19 @@
 		     <h4>Input Control Type : Select / Radio / Checkbox / Multi-Select</h4>
 		   <img src="img/input_select.png">
 		   	  <ol>
-			<li>Select "Control Type" as Input </li>
-			<li>Select "Input Type" as Select / Radio / Checkbox / Multi-Select </li>
-		    <li>Check if field is mandatory </li>
-			<li>Enter "Label" of the field </li>
-			<li>Configure Lookup List Setup </li>
+			<li>Select "Control Type" as Input. </li>
+			<li>Select "Input Type" as Select / Radio / Checkbox / Multi-Select. </li>
+		    <li>Check if the field is mandatory. </li>
+			<li>Enter "Label" of the field. </li>
+			<li>Configure Lookup List Setup. </li>
 				<ul>
-				<li>Static  - Configure by enter static list value</li>
-				<li>Data Source- Using pre-define data source from other system (Please seek IT assistance for configuration if required)</li>
+				<li>Static- Configure by enter static list value.</li>
+				<li>Data Source- Using predefined data source from other system (Please seek IT assistance for configuration if required).</li>
 				</ul>
-			<li>Check if field is conditional input </li>
+			<li>Check if the field is conditional.</li>
 			<ul>
-			 <li>Field is displayed only when a particular criteria is met . Else , it will be hidden from display</</li>
-			 <li>Refer "Conditional Rules" section for more details</li>
+			 <li>Field is displayed only when the defined criteria is matched.</</li>
+			 <li>Refer "Configure field conditional rules" section for more details.</li>
 			</ul>
 			
 		
@@ -233,17 +233,17 @@
 		      <img src="img/input_user_info.png">
 		   	 
 			 <ol>
-			 <li>Select "Control Type" as Input </li>
-			<li>Select "Input Type" as User Info </li>
-			<li>Enter "Label" of the field </li>
-			<li>Select "User Info" to display </li>
+			 <li>Select "Control Type" as Input. </li>
+			<li>Select "Input Type" as User Info. </li>
+			<li>Enter "Label" of the field. </li>
+			<li>Select user info to display. </li>
 			<ul>
-			 <li>You may select to display initiator's profile info from HR system such as first name, last name, job title , cost center and etc </li>
+			 <li>You may select requestor's profile info from HR system such as first name, last name, job title , cost center for display. </li>
 			</ul>
-			<li>Check if field is conditional input </li>
+			<li>Check if the field is conditional.</li>
 			<ul>
-			 <li>Field is displayed only when a particular criteria is met . Else , it will be hidden from display</li>
-			 <li>Refer "Conditional Rules" section for more details</li>
+			 <li>Field is displayed only when the defined criteria is matched.</li>
+			 <li>Refer "Configure field conditional rules" section for more details.</li>
 			</ul>
 			
 		   </ol>
@@ -251,91 +251,69 @@
 		     <h4>Input Control Type : Editable-html</h4>
 		      <img src="img/input_html.png">
 		   	  <ol>
-			<li>Select "Control Type" as Input </li>
-			<li>Select "Input Type" as editable-html </li>
-			<li>Enter "Label" of the field </li>
-			<li>Enter content in html editor </li>
+			<li>Select "Control Type" as Input. </li>
+			<li>Select "Input Type" as editable-html. </li>
+			<li>Enter "Label" of the field. </li>
+			<li>Enter content in html editor. </li>
 			<ul>
-			 <li>Content will be displayed in editable html to initiator. When you have complicated form that cannot be built in BPM, you may consider to define the form in html editor and let initiator to fill in html format. </li>
-			</ul>
-			<li>Check if field is conditional input </li>
+			 <li>Content will be displayed in editable html</ul>
+			<li>Check if the field is conditional.</li>
 			<ul>
-			 <li>Conditional field mean field is displayed only when a particular criteria is met . Else , it will be hidden from display</li>
-			 <li>Refer "Conditional Rules" section for more details</li>
+			 <li>Field is displayed only when the defined criteria is matched.</li>
+			 <li>Refer "Configure field conditional rules" section for more details.</li>
 			</ul>
 		   </ol>
 		      <br></br>
-		   <h4>Input Control Type : e-Sign</h4>
+		   <h4>Input Control Type : e-sign</h4>
 		      <img src="img/input_sign.png">
 		   	  <ol>
-			<li>Select "Control Type" as Input </li>
-			<li>Select "Input Type" as e-sign </li>
-			<li>Check if field is mandatory </li>
-			<li>Enter "Label" of the field </li>
+			<li>Select "Control Type" as Input. </li>
+			<li>Select "Input Type" as e-sign. </li>
+			<li>Check if the field is mandatory. </li>
+			<li>Enter "Label" of the field. </li>
+			<li>Check if the field is conditional.</li>
 			<ul>
-			 <li>Content will be displayed in editable html to initiator. When you have complicated form that cannot be built in BPM, you may consider to define the form in html editor and let initiator to fill in html format. </li>
-			</ul>
-			<li>Check if field is conditional input </li>
-			<ul>
-			 <li>Conditional field mean field is displayed only when a particular criteria is met . Else , it will be hidden from display</li>
-			 <li>Refer "Conditional Rules" section for more details</li>
+			 <li>Field is displayed only when the defined criteria is matched.</li>
+			 <li>Refer "Configure field conditional rules" section for more details.</li>
 			</ul>
 		   </ol>
 		      <br></br>
-		     <h4>Output Control Type : Static-html</h4>
+		     <h4>Output Control Type : static-html</h4>
 		      <img src="img/output_html.png">
 		   	  <ol>
-			<li>Select "Control Type" as Output </li>
-			<li>Select "Input Type" as static-html </li>
-			<li>Enter "Label" of the field </li>
-			<li>Enter content in html editor </li>
+			<li>Select "Control Type" as Output. </li>
+			<li>Select "output Type" as static-html. </li>
+			<li>Enter "Label" of the field. </li>
+			<li>Enter content in html editor. </li>
 			<ul>
-			 <li>Content will be displayed as read only html to initiator. This control is useful for static info like instruction and guideline </li>
+			 <li>Content will be displayed as read only html. This control is useful for static info like instruction and guideline.</li>
 			</ul>
-			<li>Check if field is conditional input </li>
+			<li>Check if the field is conditional.</li>
 			<ul>
-			 <li>Conditional field mean field is displayed only when a particular criteria is met . Else , it will be hidden from display</li>
-			 <li>Refer "Conditional Rules" section for more details</li>
+			 <li>Field is displayed only when the defined criteria is matched.</li>
+			 <li>Refer "Configure field conditional rules" section for more details.</li>
 			</ul>
 		   </ol>
 		   
-		          <br></br>
-		   
-		     <h4>Output Control Type : Static-html</h4>
-		      <img src="img/output_html.png">
-		   	  <ol>
-			<li>Select "Control Type" as Output </li>
-			<li>Select "Input Type" as static-html </li>
-			<li>Enter "Label" of the field </li>
-			<li>Enter content in html editor </li>
-			<ul>
-			 <li>Content will be displayed as read only html to initiator. This control is useful for static info like instruction and guideline </li>
-			</ul>
-			<li>Check if field is conditional input </li>
-			<ul>
-			 <li>Conditional field mean field is displayed only when a particular criteria is met . Else , it will be hidden from display</li>
-			 <li>Refer "Conditional Rules" section for more details</li>
-			</ul>
-		   </ol>
-		   
+	
 		   
 		   
 		       <br></br>
 		     <h4>Output Control Type : text / date </h4>
 		      <img src="img/output_text.png">
 		   	  <ol>
-			<li>Select "Control Type" as Output </li>
-			<li>Select "Input Type" as text / date </li>
-			<li>Enter "Label" of the field </li>
-			<li>Select data source for initial value </li>
+			<li>Select "Control Type" as Output. </li>
+			<li>Select "output Type" as text / date. </li>
+			<li>Enter "Label" of the field.</li>
+			<li>Select data source for initial value. </li>
 				<ul>
-				<li>This is a advance function used to pre-populate value using data from other system.</li>
-				<li>Please seek IT assistance for configuration if required</li>
+				<li>This is an advanced function used to populate value using data from other system.</li>
+				<li>Please seek IT assistance for configuration if required.</li>
 				</ul>
-			<li>Check if field is conditional input </li>
+			<li>Check if the field is conditional.</li>
 			<ul>
-			 <li>Conditional field mean field is displayed only when a particular criteria is met . Else , it will be hidden from display</li>
-			 <li>Refer "Conditional Rules" section for more details</li>
+			 <li>Field is displayed only when the defined criteria is matched.</li>
+			 <li>Refer "Configure field conditional rules" section for more details.</li>
 			</ul>
 		   </ol>
 		    
@@ -350,25 +328,25 @@
         ================================================== -->
         <section id="Configure-field-conditional-rules">
           <div>
-            <h2>Configure Field Conditional Rules</h2>
+            <h2>Configure field conditional rules</h2>
           </div>
 		  <img src="img/template_field_conditional.png">
 		  <ol>
-			 <li>To enable conditional rules, check on the "Is Field Conditional" checkbox and follow the steps below for configuration. </li>
+			 <li>To enable conditional rules, check on the "Is field conditional?" checkbox and follow below steps for configuration. </li>
 			 <ul>
-			 <li> All control type supports conditional rules. </li>
+			 <li> All control types support conditional rules. </li>
 			</ul>
-		  		  <li>Choose Matching Field </li>
+		  		  <li>Select "Choose Matching Field". </li>
 			</ul>
 			<ul>
-			 <li>You may use any field in form that you define in this template as matching field </li>
+			 <li>You may use any field in form that you defined in this template as matching field. </li>
 			</ul>
-		  <li>Choose Operator (e.g.= equal, no value, value exits and etc)  </li>
-		  <li>Choose Condition Value</li>
+		  <li>Choose "Operator". (e.g.= equal, no value, value exits and etc.)  </li>
+		  <li>Choose/Enter "Condition Value".</li>
 		  <ul>
-			 <li>Field will be shown to user when the define condition and value matched. Else . field will be hidden to user</li>
+			 <li>Field will be shown to user when the defined condition and value matched.</li>
 		</ul>
-		   <li>Click "+" icon to add more condition (if needed)</li>
+		   <li>Click "+" icon to add more condition (if needed).</li>
 		   </ol>
           
         </section>
@@ -378,72 +356,72 @@
 		
 		<section id="configure-table">
           <div>
-            <h2>Configure Table</h2>
+            <h2>Configure table</h2>
           </div>
 		  <img src="img/input_table.png">
 		  
 		   <ol>
-			<li>Enter label for table</li>
-			<li>Define fomula (optional) </li>
+			<li>Enter "Label" for table</li>
+			<li>Define formula (optional) </li>
 			<ul>
-			 <li>Formula can be used when require column requires some calculation (for illustration : if we have column 3 : Total Price which is derived from column 1 : Qty x column 2 Price . For such case, the formula can be defined as C3=C1*C2 and total price will be calculated without user input when display)  </li>
-			 <li>To remove existing formula, click on "X" icon at the right side </li>
-			 <li>To add new formula, click on "Add Formula" button </li>
+			 <li>Formula can be used when column requires some calculation (for illustration : if we have column no. 3 (Total Price) which is derived from column no. 1 (Qty) x column no. 2 (Price) . For such case, the formula can be defined as C3=C1*C2 and total price will be auto calculated without user input).  </li>
+			 <li>To remove existing formula, click on "X" icon on the right side. </li>
+			 <li>To add new formula, click on "Add Formula" button. </li>
 
 			</ul>
-			<li>Check if table is conditional input </li>
+			<li>Check if the table is conditional. </li>
 			<ul>
-			 <li>Conditional table mean table is displayed only when a particular criteria is met . Else , it will be hidden from display</li>
-			 <li>Refer "Conditional Rules" section for more details</li>
+			 <li>Table is displayed only when the defined criteria is matched.</li>
+			 <li>Refer "Configure field conditional rules" section for more details.</li>
 			</ul>
 			<ul>
-			 <li>Once defined table setting, you can add column to the table from the column component at the right hand side - see below screen :
+			 <li>Once defined table setting, you can add column to the table from the column component on the right-hand side — see below screen :
 			 <img src="img/input_table_group.png">
 			 </li>
-			 <li>The column configuration is same as field configuration but with additional setting for aggregation such as count, sum (For number input type only) and average (For number input type only) - see below screen for configuration and table display shown to end-users :
+			 <li>The column configuration is same as field configuration but with additional setting for aggregation such as count, sum (for number input type only) and average (for number input type only) - see below screen for configuration and table display shown to end-users :
 			 <img src="img/input_table_setting.png">
-			 <img src="img/input_table_output.png">
+			 <B><U>Display of table</U></B>
+			 <img src="img/table.png">
 			 </li>
 			</ul>
 		   </ol>
 		  </section>
-		
-		
+			
 		
 		
 		      <!-- Configure Approver / Action Taker and Acknowledger
         ================================================== -->
         <section id="Configure-Role">
           <div>
-            <h2>Configure Workflow</h2>
+            <h2>Configure workflow</h2>
           </div>
 		  You are allowed to configure workflow with multiple approver, action taker, acknowledger, user group and automator in any sequence as per your business needs. 
 		   <BR></br>
 		  <ul>
-		  <li>Approver 		: Allow to approve,reject and send back process for rework</li>
-		  <li>Action taker  : Allow to complete process and send back process for rework</li>
-		  <li>Acknowledger  : Be notified only. Not action required. </li>
-		  <li>User group    : Mutliple approver/action taker can be added in the user group with setting either all require to take action or anyone from the group to take action</li>
-						 <ul><li>User under the same group will receive task simultaneously</li></ul>
-		  <li>Automator     : Pre-defined System automated process without human intervention (e.g. integration with other system for data exchange)   </li>
+		  <li>Approver 		: Can approve, reject or send process back for rework.</li>
+		  <li>Action taker  : Can complete process or send process back for rework.</li>
+		  <li>Acknowledger  : Be notified only. No action required. </li>
+		  <li>User group    : Multiple  approver/action taker can be added in the user group with setting either all require to take action or anyone from the group to take action.</li>
+						 <ul><li>User under the same group will receive task simultaneously.</li></ul>
+		  <li>Automator     : predefined automated process without human intervention (e.g. integration with other system for data exchange).   </li>
 			 <ul>
-			 <li>Please seek IT assistance for configuration if required</li></ul>
+			 <li>Please seek IT assistance for configuration if required.</li></ul>
 		  </ul>
 		  <BR></br>
 		  Below are the steps on how to add and configure steps into workflow.
 
 		  <img src="img/template_header_approver.png">
 		  <ol>
-		  <li>Click on "Add" button on Approver / Acknowledger / Action Taker / Automator / User Group panel </li> 
-		  <li>New section wiill be added automatically into configuration page</li>
+		  <li>Click on "ADD +" button on approver / acknowledger / action Taker / automator / user group from component panel. </li> 
+		  <li>New section will be added automatically into configuration page.</li>
 			<ul>
-			 <li>You could delete the section by clicking on the "Delete" icon</li>
-			 <li>You could arrange the process sequence simply by drag and drop the section</li>
-			 <li>You could add additional input field(s) by clicking on "Add" Field icon in panel</li>
-			 <li>You could also clone the section via the "copy" icon</li>
+			 <li>You could delete the section by clicking on the "X" icon.</li>
+			 <li>You could arrange the process sequence simply by drag and drop the section.</li>
+			 <li>You could add additional input field(s) by clicking on "Add" Field icon in panel.</li>
+			 <li>You could also clone the section via the "copy" icon.</li>
 
 			</ul>
-		  <li>For each added section, click on the "Config" icon to define role who needed to take action</li>
+		  <li>For each added section, click on the "Configuration" icon to define role who requires to take action.</li>
 		   </ol>
 		   
 		   				
@@ -451,75 +429,76 @@
         ================================================== -->
 		   
 		   <br></br>
-		   <h4>Appover Configuration</h4>
+		   <h4>Appover configuration</h4>
 		   <img src="img/approver_config.png">
 		   
 		  <ol>
-		  <li>Select "Role Type" </li>
+		  <li>Select "Role Type". </li>
 		  <ul>
 			 <li>Anyone in Biosensors</li>
 				<ul>
-					<li>This allow initiator to select own approver from user listing during process initiation</li>
+					<li>This allows initiator to select own approver from user listing during process initiation.</li>
 				</ul>
-			<li>Spesific Role</li>
+			<li>Specific Role</li>
 				<ul>
-					<li>Process will be routed to spesific role confgured at Company,Functions,Department and Job Title level for action </li>
-					<li>The role can be setup in 4 ways</li>
+					<li>Process will be routed to specific role configured at company,function,department and job title level for action. </li>
+					<li>The role can be setup as :</li>
 					<ul>
-					<li>Company</li>
-					<li>Company + Function</li>
-					<li>Company + Function + Department</li>
-					<li>Company + Function + Department + Job Title</li>
+					<li>Company only</li>
+					<li>Company + function only</li>
+					<li>Company + function + department only </li>
+					<li>Company + function + department + job title</li>
 					</ul>
 					
-					<li>If there is more than one person matched  for the define role , system will display as user list for user selection </li>
+					<li>If there is more than one person found for the defined role , system will display the user list for selection (e.g. if role is setup as company only, list of users under the company will be shown for selection) </li>
 
 				</ul>
 			 <li>Same User As</li>
 				<ul>
-					<li>Process will be routed to person same as in other user steps (user to specify)</li>
+					<li>Process will be routed to person same as in other user steps (user to specify).</li>
 				</ul>
 			 <li>Requestor</li>
 				<ul>
-					<li>Process will be routed to requestor</li>
+					<li>Requestor is either initiator or on-behalf user.</li>
+					<li>Process will be routed to requestor.</li>
 				</ul>
 		
 			<li>Direct Manager Of</li>
 				<ul>
-					<li>Process will be routed to direct manager of the user in other user steps (user to specify)</li>
+					<li>Process will be routed to direct manager of the user in other user steps (user to specify).</li>
 				</ul>
-			<li>Function Manager Of</li>
+			<li>Function Manager of</li>
 				<ul>
-					<li>Process will be routed to Function Manager of the user in other user steps (user to specify)</li>
+					<li>Process will be routed to function manager of the user in other user steps (user to specify).</li>
 				</ul>
 				
-			<li>Function Head Of</li>
+			<li>Function Head of</li>
 				<ul>
-					<li>Process will be routed to Function Head of the user in other user steps (user to specify)</li>
+					<li>Process will be routed to function head of the user in other user steps (user to specify).</li>
 				</ul>
-			<li>Function VP Of</li>
+			<li>Function VP of</li>
 			<ul>
-				<li>Process will be routed to Function Head of the user in other user steps (user to specify)</li>
+				<li>Process will be routed to VP of the user in other user steps (user to specify).</li>
 			</ul>
 			<li>CFO</li>
 			<ul>
-				<li>Process will be routed to Company CFO</li>
+				<li>Process will be routed to Company CFO.</li>
 			</ul>
 			<li>CEO</li>
 			<ul>
-				<li>Process will be routed to Company CEO</li>
+				<li>Process will be routed to Company CEO.</li>
 			</ul>
 		
 		 </ul>
 		<li>Choose Validator </li>
 			<ul>
-			 <li>This allow system to perform additional validation upon action done by user (e.g. check if mandatory data is provided and etc)</li>
-			 <li>Please seek IT assistance for configuration if required </li>
+			 <li>This allows system to perform additional validation upon action done by user (e.g. check if mandatory data is provided and etc).</li>
+			 <li>Please seek IT assistance for configuration if required. </li>
 			</ul>
-		<li>Check if Input conditional </li>
+		<li>Check if approver is conditional </li>
 			<ul>
-			 <li>Conditional role mean role is routed for action only when a particular criteria is met . Else , it will be not be routed for action</li>
-			 <li>The configuration is similiar as Field Conditional Rules. Refer "Configure Field Conditional Rules" for details</li>
+			 <li>Approver is routed for action only when the defined criteria is matched.</li>
+			 <li>The configuration is similar as field conditional rules. Refer "Configure field conditional rules" for details.</li>
 			</ul>
 		   </ol>
  
@@ -528,7 +507,7 @@
 		      <!-- Config Action Taker
         ================================================== -->
 			   <br></br>
-		   <h4>Action Taker Configuration</h4>
+		   <h4>Action taker configuration</h4>
 		   <img src="img/actiontaker_config.png">
 		   
 		  <ol>
@@ -536,40 +515,41 @@
 		  <ul>
 			 <li>Anyone in Biosensors</li>
 				<ul>
-					<li>This allow initiator to select own approver from user listing during process initiation</li>
+					<li>This allows initiator to select own approver from user listing during process initiation.</li>
 				</ul>
-			<li>Spesific Role</li>
+			<li>Specific role</li>
 				<ul>
-					<li>Process will be routed to spesific role confgured at Company,Functions,Department and Job Title level for action </li>
-					<li>The role can be setup in 4 ways</li>
+					<li>Process will be routed to specific role configured at Company, function, department and job title level for action. </li>
+						<li>The role can be setup as :</li>
 					<ul>
-					<li>Company</li>
-					<li>Company + Function</li>
-					<li>Company + Function + Department</li>
-					<li>Company + Function + Department + Job Title</li>
+					<li>Company only</li>
+					<li>Company + function only</li>
+					<li>Company + function + department only </li>
+					<li>Company + function + department + job title</li>
 					</ul>
 					
-					<li>If there is more than one person matched  for the define role , system will display as user list for user selection </li>
+					<li>If there is more than one person found for the defined role , system will display the user list for selection (e.g. if role is setup as company only, list of users under the company will be shown for selection) </li>
 
 				</ul>
 			 <li>Same User As</li>
 				<ul>
-					<li>Process will be routed to person same as in other user steps (user to specify)</li>
+					<li>Process will be routed to person same as in other user steps (user to specify).</li>
 				</ul>
 			 <li>Requestor</li>
 				<ul>
-					<li>Process will be routed to requestor</li>
+					<li>Requestor is either initiator or on-behalf user.</li>
+					<li>Process will be routed to requestor.</li>
 				</ul>
 		 </ul>
 		<li>Choose Validator </li>
 			<ul>
-			 <li>This allow system to perform additional validation upon action done by user (e.g. check if mandatory data is provided and etc)</li>
-			 <li>Please seek IT assistance for configuration if required </li>
+			 <li>This allows system to perform additional validation upon action done by user (e.g. check if mandatory data is provided and etc).</li>
+			 <li>Please seek IT assistance for configuration if required. </li>
 			</ul>
-		<li>Check if Input conditional </li>
+		<li>Check if the Action Taker is conditional. </li>
 			<ul>
-			 <li>Conditional role mean role is routed for action only when a particular criteria is met . Else , it will be not be routed for action</li>
-			 <li>The configuration is similiar as Field Conditional Rules. Refer "Configure Field Conditional Rules" for details</li>
+			 <li>Action Taker is routed for action only when the defined criteria is matched.</li>
+			 <li>The configuration is similar as field conditional rules. Refer "Configure field conditional rules" for details.</li>
 			</ul>
 		   </ol>
        
@@ -577,7 +557,7 @@
 		      <!-- Config acknowledger
         ================================================== -->
 		 <br></br>
-		   <h4>Acknowledger Configuration</h4>
+		   <h4>Acknowledger configuration</h4>
 		   <img src="img/ack_config.png">
 		   
 		  <ol>
@@ -585,40 +565,41 @@
 		  <ul>
 			 <li>Anyone in Biosensors</li>
 				<ul>
-					<li>This allow initiator to select own approver from user listing during process initiation</li>
+					<li>This allows initiator to select own approver from user listing during process initiation.</li>
 				</ul>
-			<li>Spesific Role</li>
+			<li>Specific role</li>
 				<ul>
-					<li>Process will be routed to spesific role confgured at Company,Functions,Department and Job Title level for action </li>
-					<li>The role can be setup in 4 ways</li>
+					<li>Process will be routed to specific role configured at Company,function,department and job title level for action. </li>
+						<li>The role can be setup as :</li>
 					<ul>
-					<li>Company</li>
-					<li>Company + Function</li>
-					<li>Company + Function + Department</li>
-					<li>Company + Function + Department + Job Title</li>
+					<li>Company only</li>
+					<li>Company + function only</li>
+					<li>Company + function + department only </li>
+					<li>Company + function + department + job title</li>
 					</ul>
 					
-					<li>If there is more than one person matched  for the define role , system will display as user list for user selection </li>
+					<li>If there is more than one person found for the defined role , system will display the user list for selection (e.g. if role is setup as company only, list of users under the company will be shown for selection) </li>
 
 				</ul>
 			 <li>Same User As</li>
 				<ul>
-					<li>Process will be routed to person same as in other user steps (user to specify)</li>
+					<li>Process will be routed to person same as in other user steps (user to specify).</li>
 				</ul>
 			 <li>Requestor</li>
 				<ul>
-					<li>Process will be routed to requestor</li>
+					<li>Requestor is either initiator or on-behalf user.</li>
+					<li>Process will be routed to requestor.</li>
 				</ul>
 			
 			<li>Group Email </li>
 				<ul>
-					<li>It provide flexibility to inform group users via group email without needed to setup multiple acknowledger that target different users      </li>
+					<li>It provides flexibility to inform group users via group email without needed to setup multiple acknowledger that target different users.     </li>
 				</ul>
 		 </ul>
-		<li>Check if Input conditional </li>
+		<li>Check if acknowledger is conditional. </li>
 			<ul>
-			 <li>Conditional role mean role is routed for action only when a particular criteria is met . Else , it will be not be routed for action</li>
-			 <li>The configuration is similiar as Field Conditional Rules. Refer "Configure Field Conditional Rules" for details</li>
+			 <li>Acknowledger is notified only when the defined criteria is matched.</li>
+			 <li>The configuration is similar as Field Conditional Rules. Refer "Configure field conditional rules" for details</li>
 			</ul>
 		   </ol>
  
@@ -626,19 +607,19 @@
 		      <!-- Config Automator
         ================================================== -->
 		 <br></br>
-		   <h4>Automator Configuration</h4>
+		   <h4>Automator configuration</h4>
 		   <img src="img/auto_config.png">
 		   
 		  <ol>
 		 	<li>Choose an Automator</li>
 			<ul>
-			 <li>Define Function that automated process without human intervention (e.g. integration with other system for data exchange) </li>
-			 <li>Please seek IT assistance for configuration if required</li>
+			 <li>Define function that automated process without human intervention. (e.g. integration with other system for data exchange) </li>
+			 <li>Please seek IT assistance for configuration if required.</li>
 			</ul>
-		<li>Check if Input conditional </li>
+		<li>Check if the automator is conditional </li>
 			<ul>
-			 <li>Conditional role mean role is routed for action only when a particular criteria is met . Else , it will be not be routed for action</li>
-			 <li>The configuration is similiar as Field Conditional Rules. Refer "Configure Field Conditional Rules" for details</li>
+			 <li>Automator is triggered only when the defined criteria is matched.</li>
+			 <li>The configuration is similar as field conditional rules. Refer "Configure field conditional rules" for details.</li>
 			</ul>
 		   </ol>
  
@@ -646,57 +627,50 @@
 		      <!-- Config User Group
         ================================================== -->
 		 <br></br>
-		   <h4>User Group Configuration</h4>
+		   <h4>User group configuration</h4>
+		   <ul>
+			   <li>A user group can include multiple approvers or action takers</li>
+			   <li>All the approvers/action takers in the group will be pending action at same time once the process is routed to the user group</li>
+		   </ul>
 		   <img src="img/group_config.png">
 		   <img src="img/groupdetail_config.png">
 		  <ol>
-		 	<li>Choose User Group Config Type</li>
+		 	<li>Select "Choose User Group Config Type".</li>
 			<ul>
-			 <li>All In Parallel - All users in the user group are required to complete the task in order for process to proceed next step</li>
-			 <li>Anyone - One of the user in user group is required to complete the task in order for process to proceed next step</li>
+			 <li>All in Parallel - All users in the user group are required to complete the task in order for process to proceed to next step.</li>
+			 <li>Anyone - Only one of the user in user group is required to complete the task in order for process to proceed to next step.</li>
 			</ul>
-		<li>Check if Input conditional </li>
+		<li>Check if the user group is conditional. </li>
 			<ul>
-			 <li>Conditional role mean role is routed for action only when a particular criteria is met . Else , it will be not be routed for action</li>
-			 <li>The configuration is similiar as Field Conditional Rules. Refer "Configure Field Conditional Rules" for details</li>
+			 <li>The user group is routed for action only when the defined criteria is matched.</li>
+			 <li>The configuration is similar as Field Conditional Rules. Refer "Configure field conditional rules" for details.</li>
 			</ul>
 		   </ol>
  
-		
-
-		
-	
-		
-		
-		
-		
-		
-		
-		
 		</section>
 		
 		      <!-- Configure Reminder
         ================================================== -->
         <section id="Configure-Reminder">
           <div>
-            <h2>Configure Reminder</h2>
+            <h2>Configure reminder</h2>
           </div>
-		  Reminder setting allow you to configure how frequent the notification should be sent if there is no action from Approver / Action Taker. 
+		  Reminder setting allows you to configure how frequent the notification should be sent if there is no action from Approver / Action Taker. 
 		  <img src="img/template_reminder_icon.png">
 		  To configure reminder, select a section and click on the "Bell" icon.
 		  <img src="img/template_reminder.png">
 		  <ol>
-		  <li>Enable/Disable Email Reply Allowed </li>
+		  <li>Enable/Disable "Email Reply Allowed". </li>
 			<ul>
-			 <li>When enable, system allow user to act on request by replying through email. If disabled, user has to act on the request through BPM system  </li>
+			 <li>When enable, system allows user to act on request by replying through email. If disabled, user has to act on the request through BPM system. </li>
 			</ul>
-			<li>Enter reminder interval days </li>
+			<li>Enter "Reminder Interval Days". </li>
 			<ul>
 			 <li>Reminder will be sent based on the configured interval days. </li>
 			</ul>
-		  <li>Enter Number of Times</li>
+		  <li>Enter "Reminder Number of Times".</li>
 		  <ul>
-			 <li>Reminder will stop send to user once reach the configured value</li>
+			 <li>Reminder will stop sending email reminder to user once reaching the configured value.</li>
 			</ul>
 	
 		   </ol>
@@ -705,30 +679,30 @@
 		
 		  <section id="Submit-Template">
           <div>
-            <h2>Submit Template for Approval</h2>
+            <h2>Submit template for approval</h2>
           </div>
 		   <img src="img/template_submission.png">
 		  <ol>
-		  <li>Click on "Preview" button to review template before submission</li>
+		  <li>Click on "Preview" button to review template before submission.</li>
 			<ul>
-			 <li>You will be able see how the form is rendered to requestor and who will be routed to for action and approval</li>
+			 <li>You will be able see how the form is rendered to requestor and who will be routed to for action and approval.</li>
 			</ul>
-		  <li>Click on "Save as Draft" for later submission</li>
+		  <li>Click on "Save Draft" for later submission.</li>
 		  <ul>
-			 <li>This is pretty useful when process is complicated and take time to design</li>
+			 <li>This is pretty useful when process is complicated and take time to design.</li>
 			</ul>
-		  <li>Click on "Submit" button to submit the template for approval</li>
+		  <li>Click on "Submit" button to submit the template for approval.</li>
 		  <ul>
-			 <li>Button will be disabled if system detect there is missing mandatory information or invalid setting</li>
+			 <li>Button will be disabled if system detects there is missing mandatory information or invalid setting.</li>
 		
-			 <li>Upon submission, template will first be routed to your local IT, follow by your functional head for review and approval </li>
-			 <li>Template will be released and avaialble to all users to raise process once approval given by both local IT and functional head </li>
+			 <li>Upon submission, template will first be routed to your local IT, follow by your functional head for review and approval. </li>
+			 <li>Template will be released and available to all users once approval given by both local IT and functional head. </li>
 		</ul>
-		  <li>Click on "Copy Template" button to copy template from dev enviroment to production enviroment</li>
+		  <li>Click on "Copy Template" button to copy template into clipboard. Then you can paste the template in "New template from copy" feature.</li>
 		   <ul>
-			 <li>Please contact IT for assistance for this exercise</li>
+			 <li>Please contact IT for assistance about the usage.</li>
 			</ul>
-		<li>Click on "Reset" button will erase current template configuration and start as new template</li>
+		<li>Click on "Reset" button will erase current template configuration and start as new template.</li>
 		   </ol>
           
         </section>

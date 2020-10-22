@@ -4,7 +4,7 @@
   "description": "online help for BioPMS",
   "main": "server.js",
   "scripts": {
-    "start":"nodemon server.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
